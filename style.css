@@ -1,10 +1,3 @@
-/* =========================================================
-   Dennis Ritchie Portfolio — Stylesheet
-   Theme: "Amber Terminal" — a nod to 1970s Bell Labs CRT
-   monitors and the UNIX command line Ritchie helped invent.
-   ========================================================= */
-
-/* ---------- Design tokens ---------- */
 :root {
   --bg:          #0c0b08;
   --bg-alt:      #14120c;
@@ -24,7 +17,7 @@
   --max-width:   1080px;
 }
 
-/* ---------- Universal reset ---------- */
+/*  Universal reset  */
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ---------- Element selectors ---------- */
+/*  Element selectors  */
 body {
   background-color: var(--bg);
   background-image:
@@ -96,7 +89,7 @@ button {
   cursor: pointer;
 }
 
-/* ---------- Reusable class utilities ---------- */
+/*  Reusable class utilities  */
 .eyebrow {
   font-family: var(--font-mono);
   color: var(--amber-dim);
@@ -169,7 +162,7 @@ button {
   color: #ffd166;
 }
 
-/* ---------- Navbar (Flexbox) ---------- */
+/*  Navbar (Flexbox)  */
 .navbar {
   position: sticky;
   top: 0;
@@ -231,7 +224,7 @@ button {
   border-radius: 2px;
 }
 
-/* ---------- Header / Hero ---------- */
+/*  Header / Hero  */
 .hero {
   padding: 3rem 1.5rem 2rem;
 }
@@ -314,7 +307,7 @@ button {
   gap: 1rem;
 }
 
-/* ---------- About ---------- */
+/*  About  */
 .about-grid {
   display: flex;
   gap: 3rem;
@@ -355,7 +348,7 @@ button {
   margin-bottom: 0.2rem;
 }
 
-/* ---------- Education table ---------- */
+/*  Education table  */
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--rule);
@@ -395,7 +388,7 @@ tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* ---------- Contributions ---------- */
+/*  Contributions  */
 .contrib-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -433,7 +426,7 @@ tbody tr:last-child td {
   font-size: 0.92rem;
 }
 
-/* ---------- Awards ---------- */
+/*  Awards  */
 .awards-list li {
   display: flex;
   align-items: baseline;
@@ -464,7 +457,7 @@ tbody tr:last-child td {
   font-size: 0.9rem;
 }
 
-/* ---------- Gallery ---------- */
+/*  Gallery  */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -492,7 +485,7 @@ tbody tr:last-child td {
   color: var(--text-dim);
 }
 
-/* ---------- Contact ---------- */
+/*  Contact  */
 .contact-grid {
   display: flex;
   gap: 3rem;
@@ -570,7 +563,7 @@ tbody tr:last-child td {
   align-self: flex-start;
 }
 
-/* ---------- Footer ---------- */
+/*  Footer  */
 .site-footer {
   background-color: var(--surface-2);
   border-top: 1px solid var(--rule);
@@ -622,11 +615,6 @@ tbody tr:last-child td {
   font-family: var(--font-mono);
   font-size: 0.85rem;
 }
-
-/* =========================================================
-   Responsive design
-   ========================================================= */
-
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column;
