@@ -1,309 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dennis Ritchie | Portfolio</title>
-  <meta name="description"
-    content="A tribute portfolio for Dennis M. Ritchie, creator of the C programming language and co-creator of UNIX.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dennis Ritchie - Portfolio</title>
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- External CSS (custom) -->
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body id="top">
-
-  <!-- NAVBAR  -->
-  <nav class="navbar">
-    <div class="nav-inner">
-      <span class="brand">ritchie<span class="cursor-blink">_</span></span>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">about</a></li>
-        <li><a href="#education">education</a></li>
-        <li><a href="#contributions">contributions</a></li>
-        <li><a href="#awards">awards</a></li>
-        <li><a href="#gallery">gallery</a></li>
-        <li><a href="#contact">contact</a></li>
+<!-- ============ NAVIGATION ============ -->
+<nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Dennis Ritchie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contributions">Contributions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- HEADER -->
-  <header class="hero" id="header">
-    <div class="terminal-window">
-      <div class="title-bar">
-        <span class="dot dot-red"></span>
-        <span class="dot dot-yellow"></span>
-        <span class="dot dot-green"></span>
-        <span class="title-bar-label">ritchie@bell-labs: ~/portfolio</span>
-      </div>
-      <div class="hero-content">
-        <figure class="hero-photo">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dennis%20Ritchie%202011.jpg"
-            alt="Portrait photograph of Dennis Ritchie at the Japan Prize ceremony, 2011">
-        </figure>
-        <div class="hero-text">
-          <p class="eyebrow">Beloved Computer Scientist</p>
-          <h1>Dennis&nbsp;M.&nbsp;Ritchie</h1>
-          <p class="designation">Computer Scientist &middot; Creator of C &middot; Co-Creator of UNIX</p>
-          <p class="hero-sub">Sept 9, 1941 &ndash; Oct 12, 2011 &nbsp;|&nbsp; Bell Telephone Laboratories, New Jersey,
-            USA</p>
-          <div class="hero-links">
-            <a class="btn btn-primary" href="#about">Read Bio</a>
-            <a class="btn btn-outline" href="https://en.wikipedia.org/wiki/Dennis_Ritchie" target="_blank"
-              rel="noopener">Wikipedia &#8599;</a>
-          </div>
+<!-- ============ HEADER / HERO ============ -->
+<header id="header">
+  <div class="container header-flex">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dennis%20Ritchie%202011.jpg" alt="Dennis Ritchie" class="profile-pic">
+    <div>
+      <h1>Dennis M. Ritchie</h1>
+      <p class="designation">Computer Scientist | Creator of C Language | Co-Creator of UNIX</p>
+      <a href="#contact" class="btn btn-warning btn-lg mt-2">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <hr class="divider">
+    <p>
+      Dennis MacAlistair Ritchie was an American computer scientist best known for
+      creating the C programming language and for co-creating the UNIX operating
+      system along with Ken Thompson. He worked at Bell Labs for his entire career,
+      starting in 1967. Between 1969 and 1973, he designed the C programming
+      language, which later became one of the most widely used languages in the
+      world. He also helped rewrite the UNIX operating system in C, which made it
+      possible to run UNIX on many different types of computers. In 1978, he
+      co-authored the famous book "The C Programming Language" along with Brian
+      Kernighan. This book is still used by students and professionals today to
+      learn C. Ritchie received the Turing Award in 1983, which is considered the
+      highest honor in computer science. He retired from Bell Labs in 2007 and
+      passed away in 2011. His contributions to programming languages and
+      operating systems are still used in almost every computer and mobile phone
+      today.
+    </p>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <hr class="divider">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover bg-white">
+        <thead class="table-warning">
+          <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Degree</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1959</td>
+            <td>Summit High School, New Jersey</td>
+            <td>Secondary Education</td>
+          </tr>
+          <tr>
+            <td>1963</td>
+            <td>Harvard University</td>
+            <td>B.S. in Physics</td>
+          </tr>
+          <tr>
+            <td>1963-1967</td>
+            <td>Harvard University</td>
+            <td>Graduate Study in Applied Mathematics</td>
+          </tr>
+          <tr>
+            <td>1967</td>
+            <td>Bell Telephone Laboratories</td>
+            <td>Joined as Research Staff</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTRIBUTIONS ============ -->
+<section id="contributions" class="section">
+  <div class="container">
+    <h2 class="section-title">Major Contributions</h2>
+    <hr class="divider">
+    <ol class="row g-4 list-unstyled">
+      <li class="col-md-6">
+        <div class="contrib-card">
+          <h3>1. C Programming Language</h3>
+          <p>Designed and developed C between 1969 and 1973, which became the base for many other languages like C++ and Java.</p>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <!--  ABOUT  -->
-    <section class="section" id="about">
-      <h2 class="section-title">Biography</h2>
-      <div class="divider"></div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Dennis MacAlistair Ritchie was an American computer scientist who, more than
-            perhaps any other single individual, shaped the software world we still live in
-            today. Joining Bell Telephone Laboratories in 1967, he spent his entire career
-            there researching operating systems and programming languages. Between 1969 and
-            1973 he designed and implemented the <strong>C programming language</strong>, built
-            as a practical successor to the earlier B language so that the UNIX kernel could
-            finally be rewritten in something more portable than raw assembly code. Working
-            closely with longtime collaborator Ken Thompson, Ritchie co-created the
-            <strong>UNIX operating system</strong>, introducing design ideas &mdash; a
-            hierarchical file system, device-independent input/output, and small composable
-            tools connected by pipelines &mdash; that still underpin Linux, macOS, Android, and
-            almost every modern server today. In 1978 he co-authored <em>The C Programming
-              Language</em> with Brian Kernighan, a slim reference so influential that it is
-            simply known to generations of programmers as "K&amp;R." Quiet, precise, and
-            famously camera-shy, Ritchie retired from Lucent Technologies (formerly Bell Labs)
-            in 2007 after four decades of continuous research.
-          </p>
+      </li>
+      <li class="col-md-6">
+        <div class="contrib-card">
+          <h3>2. UNIX Operating System</h3>
+          <p>Co-created UNIX with Ken Thompson, introducing ideas like file systems and pipelines still used today.</p>
         </div>
-        <ul class="about-facts">
-          <li><span>Born</span>September 9, 1941 &ndash; Bronxville, New York</li>
-          <li><span>Died</span>October 12, 2011 &ndash; Berkeley Heights, New Jersey</li>
-          <li><span>Education</span>Harvard University (B.S., Physics)</li>
-          <li><span>Known For</span>C Language, UNIX, B, BCPL, Plan 9</li>
-          <li><span>Employer</span>Bell Labs / Lucent Technologies</li>
-          <li><span>Signature Award</span>Turing Award, 1983</li>
-        </ul>
+      </li>
+      <li class="col-md-6">
+        <div class="contrib-card">
+          <h3>3. Rewriting UNIX in C</h3>
+          <p>Helped rewrite the UNIX kernel in C instead of assembly language, making it portable to different machines.</p>
+        </div>
+      </li>
+      <li class="col-md-6">
+        <div class="contrib-card">
+          <h3>4. The C Programming Language Book</h3>
+          <p>Co-authored this famous book with Brian Kernighan in 1978, known as "K&amp;R".</p>
+        </div>
+      </li>
+      <li class="col-md-6">
+        <div class="contrib-card">
+          <h3>5. Plan 9 Operating System</h3>
+          <p>Contributed to later operating systems developed at Bell Labs.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section id="awards" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Awards and Achievements</h2>
+    <hr class="divider">
+    <ul class="list-group awards-list">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Turing Award (shared with Ken Thompson)
+        <span class="badge bg-warning text-dark">1983</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        IEEE Richard W. Hamming Medal
+        <span class="badge bg-warning text-dark">1990</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        IEEE Computer Pioneer Award
+        <span class="badge bg-warning text-dark">1994</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        National Medal of Technology
+        <span class="badge bg-warning text-dark">1998</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        National Inventors Hall of Fame
+        <span class="badge bg-warning text-dark">1999</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Japan Prize for Information and Communications
+        <span class="badge bg-warning text-dark">2011</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2 class="section-title">Gallery</h2>
+    <hr class="divider">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dennis%20Ritchie%202011.jpg" alt="Dennis Ritchie at Japan Prize ceremony" class="gallery-img img-fluid">
       </div>
-    </section>
-
-    <!--  EDUCATION  -->
-    <section class="section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="divider"></div>
-      <div class="table-wrap">
-        <table>
-          <caption>Academic record, compiled from Bell Labs and Harvard University archives</caption>
-          <thead>
-            <tr>
-              <th scope="col">Year</th>
-              <th scope="col">Institution</th>
-              <th scope="col">Degree / Field</th>
-              <th scope="col">Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1959</td>
-              <td>Summit High School, New Jersey</td>
-              <td>Secondary Education</td>
-              <td>Graduated before entering Harvard University</td>
-            </tr>
-            <tr>
-              <td>1963</td>
-              <td>Harvard University</td>
-              <td>B.S. in Physics</td>
-              <td>Developed a strong parallel interest in computing</td>
-            </tr>
-            <tr>
-              <td>1963&ndash;1967</td>
-              <td>Harvard University</td>
-              <td>Graduate study, Applied Mathematics</td>
-              <td>Doctoral research under Prof. Patrick C. Fischer</td>
-            </tr>
-            <tr>
-              <td>1967</td>
-              <td>Bell Telephone Laboratories</td>
-              <td>Research Staff, Computing Sciences</td>
-              <td>Joined Bell Labs full-time; thesis was never formally submitted</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-4">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ken%20Thompson%20and%20Dennis%20Ritchie--1973.jpg" alt="Ken Thompson and Dennis Ritchie" class="gallery-img img-fluid">
       </div>
-    </section>
-
-    <!--  CONTRIBUTIONS  -->
-    <section class="section" id="contributions">
-      <h2 class="section-title">Major Contributions</h2>
-      <div class="divider"></div>
-      <ol class="contrib-list">
-        <li>
-          <h3>The C Programming Language</h3>
-          <p>Designed and implemented C between 1969 and 1973 as a small, efficient, portable
-            systems language. It went on to father C++, C#, Objective-C, and countless other
-            languages still in daily use.</p>
-        </li>
-        <li>
-          <h3>The UNIX Operating System</h3>
-          <p>Co-created UNIX with Ken Thompson at Bell Labs, pioneering the hierarchical file
-            system, device-independent I/O, and the pipe &mdash; ideas now standard in nearly
-            every operating system.</p>
-        </li>
-        <li>
-          <h3>Rewriting UNIX in C</h3>
-          <p>Led the effort to rewrite the UNIX kernel in C instead of assembly, making the
-            operating system portable across hardware for the first time and enabling its
-            worldwide spread.</p>
-        </li>
-        <li>
-          <h3>"The C Programming Language" (K&amp;R)</h3>
-          <p>Co-authored the definitive reference text with Brian Kernighan in 1978, teaching
-            multiple generations of engineers how to write clear, disciplined C code.</p>
-        </li>
-        <li>
-          <h3>Plan 9 &amp; Inferno Operating Systems</h3>
-          <p>Contributed to Bell Labs' later distributed operating systems, Plan 9 from Bell
-            Labs and Inferno, which explored ideas that shaped modern distributed computing.</p>
-        </li>
-        <li>
-          <h3>Bell Labs Research Culture</h3>
-          <p>Helped cultivate the collaborative Computing Sciences Research Center culture at
-            Bell Labs that produced decades of foundational software innovation.</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- AWARDS  -->
-    <section class="section" id="awards">
-      <h2 class="section-title">Awards & Achievements</h2>
-      <div class="divider"></div>
-      <ul class="awards-list">
-        <li><span class="year">1983</span><span class="award">Turing Award &mdash; ACM, shared with Ken Thompson for the
-            development of UNIX</span></li>
-        <li><span class="year">1990</span><span class="award">IEEE Richard W. Hamming Medal</span></li>
-        <li><span class="year">1994</span><span class="award">IEEE Computer Pioneer Award</span></li>
-        <li><span class="year">1997</span><span class="award">Fellow, Computer History Museum</span></li>
-        <li><span class="year">1998</span><span class="award">National Medal of Technology, presented by President Bill
-            Clinton</span></li>
-        <li><span class="year">1999</span><span class="award">Inducted into the National Inventors Hall of Fame</span>
-        </li>
-        <li><span class="year">2003</span><span class="award">Harold Pender Award, University of Pennsylvania</span>
-        </li>
-        <li><span class="year">2011</span><span class="award">Japan Prize for Information and Communications</span></li>
-      </ul>
-    </section>
-
-    <!--  GALLERY  -->
-    <section class="section" id="gallery">
-      <h2 class="section-title">Gallery</h2>
-      <div class="divider"></div>
-      <div class="gallery-grid">
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dennis%20Ritchie%202011.jpg"
-            alt="Dennis Ritchie at the Japan Prize award ceremony, 2011">
-          <figcaption>Japan Prize ceremony &mdash; 2011</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Ken%20Thompson%20and%20Dennis%20Ritchie--1973.jpg"
-            alt="Ken Thompson and Dennis Ritchie together in 1973">
-          <figcaption>With Ken Thompson, Bell Labs &mdash; 1973</figcaption>
-        </figure>
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Usenix84%201.jpg"
-            alt="Dennis Ritchie and colleagues at the USENIX 1984 Summer conference">
-          <figcaption>USENIX Summer Conference &mdash; 1984</figcaption>
-        </figure>
+      <div class="col-md-4">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Usenix84%201.jpg" alt="Dennis Ritchie at USENIX conference" class="gallery-img img-fluid">
       </div>
-    </section>
-
-    <!--  CONTACT  -->
-    <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="divider"></div>
-      <p class="note">
-        This is a student tribute project built for an academic web-development assignment.
-        The form below is a front-end demo only &mdash; it is not monitored by anyone
-        affiliated with Dennis Ritchie, Bell Labs, or Nokia.
-      </p>
-      <div class="contact-grid">
-        <form class="contact-form" action="#" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="What is this about?">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-
-        <ul class="contact-list">
-          <li><strong>Institution:</strong> Bell Telephone Laboratories<br><span class="dim">Where Ritchie spent his
-              entire 40-year career</span></li>
-          <li><strong>Field:</strong> Computer Science &amp; Systems Software</li>
-          <li><strong>Legacy site:</strong> <a href="https://www.bell-labs.com/" target="_blank"
-              rel="noopener">bell-labs.com</a></li>
-          <li><strong>Further reading:</strong> <a href="https://en.wikipedia.org/wiki/Dennis_Ritchie" target="_blank"
-              rel="noopener">Wikipedia biography</a></li>
-          <li><strong>The C Book:</strong> <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language"
-              target="_blank" rel="noopener">The C Programming Language (K&amp;R)</a></li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <!--  FOOTER  -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-  
-      <div class="student-details">
-        <h3>Designed & Developed by</h3>
-        <ul>
-          <li><strong>Name:</strong> Yogesh Pawar</li>
-          <li><strong>Enrollment / Roll No.:</strong> 240860116038</li>
-          <li><strong>Semester:</strong> 5th </li>
-          <li><strong>Course:</strong> Information Technology</li>
-          <li><strong>College:</strong> Laxmi Institute of Technology</li>
-        </ul>
-      </div>
-      
-      <p class="back-top"><a href="#top">&uarr; back to top</a></p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => navLinks.classList.remove('open'));
-    });
-  </script>
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <hr class="divider">
+    <p class="mb-4">This is a student project. Please fill the form below to send a message.</p>
+    <form action="#" method="post" class="row g-3" id="contact-form">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-warning">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
 
+<!-- ============ FOOTER ============ -->
+<footer id="footer">
+  <div class="container text-center">
+    <p>Designed and Developed by</p>
+    <div class="student-box">
+      <p><strong>Name:</strong> Yogesh Pawar</p>
+      <p><strong>Roll No:</strong> 240860116038</p>
+      <p><strong>Semester:</strong> 5th</p>
+      <p><strong>Course:</strong> Information Technology</p>
+      <p><strong>College:</strong> Laxmi Institute of Technology</p>
+    </div>
+    <a href="#header" class="back-top">Back to Top &uarr;</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
